@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
-import MenuConfig from '../../config/menuConfig';
-import './index.less'
+import MenuConfig from 'src/config/menuConfig';
+import './nav-left.less'
 
 const { SubMenu } = Menu;
 

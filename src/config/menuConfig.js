@@ -1,43 +1,43 @@
 const MenuConfig = [
     {
         title: '首页',
-        key: '/admin/key'
+        key: '/root/key'
     },
     {
         title: 'UI',
-        key: '/admin/ui',
+        key: '/root/ui',
         children: [
             {
                 title: '按钮',
-                key: '/admin/ui/buttons',
+                key: '/root/ui/buttons',
             },
             {
                 title: '弹框',
-                key: '/admin/ui/modals',
+                key: '/root/ui/modals',
             },
             {
                 title: 'Loading',
-                key: '/admin/ui/loadings',
+                key: '/root/ui/loadings',
             },
             {
                 title: '通知提醒',
-                key: '/admin/ui/notification',
+                key: '/root/ui/notification',
             },
             {
                 title: '全局Message',
-                key: '/admin/ui/messages',
+                key: '/root/ui/messages',
             },
             {
                 title: 'Tab页签',
-                key: '/admin/ui/tabs',
+                key: '/root/ui/tabs',
             },
             {
                 title: '图片画廊',
-                key: '/admin/ui/gallery',
+                key: '/root/ui/gallery',
             },
             {
                 title: '轮播图',
-                key: '/admin/ui/carousel',
+                key: '/root/ui/carousel',
             }
         ]
     }

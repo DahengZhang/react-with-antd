@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 import moment from 'dayjs'
-import JSONP from '../../ajax/Jsonp'
-import './index.less';
+import JSONP from 'src/utils/ajax/Jsonp'
+import './header.less';
 
 export default class Header extends Component {
     state = {
@@ -34,7 +34,7 @@ export default class Header extends Component {
                 <Row className="header-top">
                     <Col span="24">
                         <span>欢迎，{ this.state.userName }</span>
-                        <a href="">退出</a>
+                        {/* <a href="">退出</a> */}
                     </Col>
                 </Row>
                 <Row className="breadcrumb">
