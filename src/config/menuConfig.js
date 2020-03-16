@@ -1,7 +1,7 @@
 const MenuConfig = [
     {
         title: '首页',
-        key: '/root/key'
+        key: '/root/dashboard'
     },
     {
         title: 'UI',

@@ -3,8 +3,8 @@ import { Row, Col } from 'antd';
 import NavLeft from 'src/components/nav-left/NavLeft';
 import Header from 'src/components/header/Header';
 import Footer from 'src/components/footer/Footer';
-import Home from 'src/pages/root/home/Home';
 import 'src/assets/common.less';
+import './root.less'
 
 export default class App extends Component {
     render() {
@@ -17,7 +17,7 @@ export default class App extends Component {
                     <Col span="20" className="main">
                         <Header />
                         <Row className="content">
-                            <Home />
+                            { this.props.children }
                         </Row>
                         <Footer />
                     </Col>
