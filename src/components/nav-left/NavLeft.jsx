@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 import MenuConfig from 'src/config/menuConfig';
 import './nav-left.less'
 
 const { SubMenu } = Menu;
 
-export default class NavLeft extends Component {
+class NavLeft extends Component {
     state = {}
     componentDidMount () {
         const menuTreeNode = this.renderMenu(MenuConfig);
@@ -37,10 +37,13 @@ export default class NavLeft extends Component {
                 <h1>Imooc MS</h1>
             </div>
             <Menu
-                theme="dark">
+                theme="dark"
+                defaultSelectedKeys={ this.props.location.pathname }>
                 { this.state.menuTreeNode }
             </Menu>
             </>
         );
     };
 };
+
+export default withRouter(NavLeft);
