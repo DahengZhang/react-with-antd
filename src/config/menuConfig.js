@@ -21,7 +21,7 @@ const MenuConfig = [
             },
             {
                 title: '通知提醒',
-                key: '/root/ui/notification',
+                key: '/root/ui/notifications',
             },
             {
                 title: '全局Message',
@@ -34,6 +34,7 @@ const MenuConfig = [
             {
                 title: '图片画廊',
                 key: '/root/ui/gallery',
+                disabled: true,
             },
             {
                 title: '轮播图',

@@ -21,26 +21,26 @@ export default class Buttons extends Component {
         return (
             <div className="page-container buttons-wrapper">
                 <Card title="基础按钮">
-                    <Button className="button" type="primary">iMooc</Button>
-                    <Button className="button">iMooc</Button>
-                    <Button className="button" type="dashed">iMooc</Button>
-                    <Button className="button" type="danger">iMooc</Button>
-                    <Button className="button" disabled>iMooc</Button>
+                    <Button className="right-gap" type="primary">iMooc</Button>
+                    <Button className="right-gap">iMooc</Button>
+                    <Button className="right-gap" type="dashed">iMooc</Button>
+                    <Button className="right-gap" type="danger">iMooc</Button>
+                    <Button className="right-gap" disabled>iMooc</Button>
                 </Card>
                 <Card title="图文按钮">
-                    <Button className="button" icon={ <PlusOutlined /> }>创建</Button>
-                    <Button className="button" icon={ <EditOutlined /> }>编辑</Button>
-                    <Button className="button" icon={ <DeleteOutlined /> }>删除</Button>
-                    <Button className="button" shape="circle" icon={ <SearchOutlined /> }></Button>
-                    <Button className="button" type="primary" icon={ <SearchOutlined /> }>搜索</Button>
-                    <Button className="button" type="primary" shape="round" icon={ <DownloadOutlined /> }>下载</Button>
+                    <Button className="right-gap" icon={ <PlusOutlined /> }>创建</Button>
+                    <Button className="right-gap" icon={ <EditOutlined /> }>编辑</Button>
+                    <Button className="right-gap" icon={ <DeleteOutlined /> }>删除</Button>
+                    <Button className="right-gap" shape="circle" icon={ <SearchOutlined /> }></Button>
+                    <Button className="right-gap" type="primary" icon={ <SearchOutlined /> }>搜索</Button>
+                    <Button className="right-gap" type="primary" shape="round" icon={ <DownloadOutlined /> }>下载</Button>
                 </Card>
                 <Card title="Loading按钮">
-                    <Button className="button" type="primary" loading={this.state.loading} >iMooc</Button>
-                    <Button className="button" type="primary" shape="circle" loading={this.state.loading} icon={ <SwapOutlined /> }></Button>
-                    <Button className="button" loading={this.state.loading}>加载</Button>
-                    <Button className="button" shape="circle" icon={ <SwapOutlined /> } loading={this.state.loading}></Button>
-                    <Button className="button" type="primary" onClick={() => {
+                    <Button className="right-gap" type="primary" loading={this.state.loading} >iMooc</Button>
+                    <Button className="right-gap" type="primary" shape="circle" loading={this.state.loading} icon={ <SwapOutlined /> }></Button>
+                    <Button className="right-gap" loading={this.state.loading}>加载</Button>
+                    <Button className="right-gap" shape="circle" icon={ <SwapOutlined /> } loading={this.state.loading}></Button>
+                    <Button className="right-gap" type="primary" onClick={() => {
                         this.setState({
                             loading: !this.state.loading
                         })
@@ -66,10 +66,10 @@ export default class Buttons extends Component {
                         <Radio value="middle">中</Radio>
                         <Radio value="large">大</Radio>
                     </Radio.Group>
-                    <Button className="button" type="primary" size={this.state.size}>iMooc</Button>
-                    <Button className="button" size={this.state.size}>iMooc</Button>
-                    <Button className="button" type="dashed" size={this.state.size}>iMooc</Button>
-                    <Button className="button" type="danger" size={this.state.size}>iMooc</Button>
+                    <Button className="right-gap" type="primary" size={this.state.size}>iMooc</Button>
+                    <Button className="right-gap" size={this.state.size}>iMooc</Button>
+                    <Button className="right-gap" type="dashed" size={this.state.size}>iMooc</Button>
+                    <Button className="right-gap" type="danger" size={this.state.size}>iMooc</Button>
                 </Card>
             </div>
         );

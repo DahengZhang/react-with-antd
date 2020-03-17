@@ -24,7 +24,7 @@ class NavLeft extends Component {
                     </SubMenu>
                 )
             }
-            return <Menu.Item title={item.title} key={item.key}>
+            return <Menu.Item title={item.title} key={item.key} disabled={item.disabled}>
                 <NavLink to={item.key}>{item.title}</NavLink>
             </Menu.Item>
         });

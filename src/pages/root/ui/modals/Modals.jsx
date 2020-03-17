@@ -27,16 +27,16 @@ export default class Modals extends Component {
         return (
             <div className="page-container modals-wrapper">
                 <Card title="基础模态框">
-                    <Button type="primary" onClick={ () => this.handleOpenModal('default') } className="button">open</Button>
-                    <Button type="primary" onClick={ () => this.handleOpenModal('customFooter') } className="button">自定义页脚</Button>
-                    <Button type="primary" onClick={ () => this.handleOpenModal('top20') } className="button">顶部20px弹框</Button>
-                    <Button type="primary" onClick={ () => this.handleOpenModal('middle') } className="button">水平垂直剧中</Button>
+                    <Button type="primary" onClick={ () => this.handleOpenModal('default') } className="right-gap">open</Button>
+                    <Button type="primary" onClick={ () => this.handleOpenModal('customFooter') } className="right-gap">自定义页脚</Button>
+                    <Button type="primary" onClick={ () => this.handleOpenModal('top20') } className="right-gap">顶部20px弹框</Button>
+                    <Button type="primary" onClick={ () => this.handleOpenModal('middle') } className="right-gap">水平垂直剧中</Button>
                 </Card>
                 <Card title="信息确认框">
-                    <Button type="primary" onClick={ () => this.handleConfirmModal('confirm') } className="button">confirm</Button>
-                    <Button type="primary" onClick={ () => this.handleConfirmModal('info') } className="button">info</Button>
-                    <Button type="primary" onClick={ () => this.handleConfirmModal('success') } className="button">success</Button>
-                    <Button type="primary" onClick={ () => this.handleConfirmModal('warning') } className="button">warning</Button>
+                    <Button type="primary" onClick={ () => this.handleConfirmModal('confirm') } className="right-gap">confirm</Button>
+                    <Button type="primary" onClick={ () => this.handleConfirmModal('info') } className="right-gap">info</Button>
+                    <Button type="primary" onClick={ () => this.handleConfirmModal('success') } className="right-gap">success</Button>
+                    <Button type="primary" onClick={ () => this.handleConfirmModal('warning') } className="right-gap">warning</Button>
                 </Card>
                 <Modal
                     title="React"
